@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Весенний Дым</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .product button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        .product button:hover {
+            background-color: #45a049;
+        }
+        .price {
+            font-weight: bold;
+        }
+        .retail-price {
+            color: #4CAF50;
+        }
+        .wholesale-price {
+            color: #ff5722;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .contact-info a {
+            color: #4CAF50;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .contact-info a:hover {
+            color: #45a049;
+        }
+        .section-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+        .table-container {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .table-container table {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Весенний Дым</h1>
+        <p>Магазин вейпов и аксессуаров</p>
+    </header>
+
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#products">Товары</a>
+        <a href="#about">О нас</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+
+    <div class="container" id="home">
+        <h2>Добро пожаловать в Весенний Дым</h2>
+        <p>Здесь вы найдете лучшие вейпы, жидкости, испарители и аксессуары.</p>
+    </div>
+
+    <div class="container" id="products">
+        <h2>Наши товары</h2>
+
+        <!-- Жидкости -->
+        <div class="section-title">Жидкости для вейпов</div>
+        <div class="table-container">
+            <!-- Таблица с розничной ценой -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Описание</th>
+                        <th>Розничная цена</th>
+                        <th>Действия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Жидкость "Мятный взрыв"</td>
+                        <td>Освежающий мятный вкус</td>
+                        <td class="price retail-price">600 руб.</td>
+                        <td>
+                            <button onclick="window.location.href='https://t.me/Onlinestoreveseniysmoke'">Купить в розницу</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Жидкость "Тропический микс"</td>
+                        <td>Экзотический вкус тропических фруктов</td>
+                        <td class="price retail-price">550 руб.</td>
+                        <td>
+                            <button onclick="window.location.href='https://t.me/Onlinestoreveseniysmoke'">Купить в розницу</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Жидкость "Ванильное облако"</td>
+                        <td>Нежный ванильный вкус</td>
+                        <td class="price retail-price">500 руб.</td>
+                        <td>
+                            <button onclick="window.location.href='https://t.me/Onlinestoreveseniysmoke'">Купить в розницу</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Таблица с оптовой ценой -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Описание</th>
+                        <th>Оптовая цена</th>
+                        <th>Действия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Жидкость "Мятный взрыв"</td>
+                        <td>Освежающий мятный вкус</td>
+                        <td class="price wholesale-price">510 руб.</td>
+                        <td>
+                            <button onclick="window.location.href='https://t.me/Onlinestoreveseniysmoke'">Купить оптом</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Жидкость "Тропический микс"</td>
+                        <td>Экзотический вкус тропических фруктов</td>
+                        <td class="price wholesale-price">467 руб.</td>
+                        <td>
+                            <button onclick="window.location.href='https://t.me/Onlinestoreveseniysmoke'">Купить оптом</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Жидкость "Ванильное облако"</td>
+                        <td>Нежный ванильный вкус</td>
+                        <td class="price wholesale-price">425 руб.</td>
+                        <td>
+                            <button onclick="window.location.href='https://t.me/Onlinestoreveseniysmoke'">Купить оптом</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Вейпы -->
+        <div class="section-title">Вейпы</div>
+        <div class="table-container">
+            <!-- Таблица с розничной ценой -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Описание</th>
+                        <th>Розничная цена</th>
+                        <th>Действия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Вейп VOOPOO Drag X</td>
+                        <td>Мощный и стильный вейп</td>
+                        <td class="price retail-price">3500 руб.</td>
+                        <td>
+                            <button onclick="window.location.href='https://t.me/Onlinestoreveseniysmoke'">Купить в розницу</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Вейп SMOK Nord 4</td>
+                        <td>Компактный и удобный вейп</td>
+                        <td class="price retail-price">2800 руб.</td>
+                        <td>
+                            <button onclick="window.location.href='https://t.me/Onlinestoreveseniysmoke'">Купить в розницу</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Вейп GeekVape Aegis</td>
+                        <td>Прочный и водонепроницаемый вейп</td>
+                        <td class="price retail-price">4000 руб.</td>
+                        <td>
+                            <button onclick="window.location.href='https://t.me/Onlinestoreveseniysmoke'">Купить в розницу</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Таблица с оптовой ценой -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Описание</th>
+                        <th>Оптовая цена</th>
+                        <th>Действия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Вейп VOOPOO Drag X</td>
+                        <td>Мощный и стильный вейп</td>
+                        <td class="price wholesale-price">2975 руб.</td>
+                        <td>
+                            <button onclick="window.location.href='https://t.me/Onlinestoreveseniysmoke'">Купить оптом</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Вейп SMOK Nord 4</td>
+                        <td>Компактный и удобный вейп</td>
+                        <td class="price wholesale-price">2380 руб.</td>
+                        <td>
+                            <button onclick="window.location.href='https://t.me/Onlinestoreveseniysmoke'">Купить оптом</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Вейп GeekVape Aegis</td>
+                        <td>Прочный и водонепроницаемый вейп</td>
+                        <td class="price wholesale-price">3400 руб.</td>
+                        <td>
+                            <button onclick="window.location.href='https://t.me/Onlinestoreveseniysmoke'">Купить оптом</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container" id="about">
+        <h2>О нас</h2>
+        <p>Мы - магазин "Весенний Дым", специализирующийся на продаже вейпов и аксессуаров. У нас вы найдете все для комфортного использования вашего устройства.</p>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Контакты</h2>
+        <div class="contact-info">
+            <p>Свяжитесь с нами:</p>
+            <p>Телефон: <a href="tel:79000495672">79000495672</a></p>
+            <p>Email: info@vesenniy-dym.ru</p>
+            <p>Телеграм: <a href="https://t.me/Onlinestoreveseniysmoke">@Onlinestoreveseniysmoke</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Весенний Дым. Все права защищены.</p>
+    </footer>
+</body>
+</html>
